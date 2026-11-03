@@ -2,10 +2,10 @@
 __pycache__/
 .venv/
 *.pyc
-# file RDF estratti (si leggono direttamente dagli zip)
+# file RDF
 data/raw/camera/*.rdf
-# output pesanti rigenerabili
+# heavy outputs
 *.xes
 
-# internal group notes (shared privately, not on GitHub)
+# internal group notes
 docs/TEAM_GUIDE.md
