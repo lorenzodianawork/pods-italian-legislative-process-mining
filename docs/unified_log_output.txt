@@ -1,0 +1,10 @@
+eventi: 100048 | cases: 18269 | atti Camera orfani (non agganciati): 484
+atti Camera agganciati: 11766 / 11838
+eventi per ramo: {'S': 57901, 'C': 42147}
+cases per legislatura: {'XVII': 7415, 'XVIII': 6026, 'XIX': 4828}
+cases per n_readings: {1: 16989, 2: 1127, 3: 126, 4: 24, 5: 2, 6: 1}
+cases con eventi di entrambi i rami: 1268
+decreti-legge (natura): 416
+top attivita': [('S: Assegnazione commissione (consultiva)', 34328), ('C: Da assegnare', 11770), ('C: Assegnato', 10804), ('S: Presentazione', 7163), ('S: Assegnazione commissione (referente)', 4517), ('S: Stato - assegnato (no esame)', 4026), ('C: In corso di esame in Commissione', 3908), ('C: Assegnazione in Commissione (sede Referente)', 3678), ('S: Assegnazione commissione (redigente)', 3084), ("C: Concluso l'esame da parte della Commissione. In stato di relazione", 2615), ('C: In discussione', 2507), ('S: Stato - esame in comm.', 1250)]
+assegnazioni Senato per sede: [('S: Assegnazione commissione (consultiva)', 34328), ('S: Assegnazione commissione (referente)', 4517), ('C: Assegnazione in Commissione (sede Referente)', 3678), ('S: Assegnazione commissione (redigente)', 3084), ('S: Assegnazione commissione (deliberante)', 108), ('C: Assegnazione in Commissione (sede Legislativa)', 1)]
+XES non scritto (ModuleNotFoundError): ok, usa il CSV o installa pm4py

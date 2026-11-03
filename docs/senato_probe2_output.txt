@@ -1,0 +1,126 @@
+
+-- 1) Ddl per legislatura
+   7 righe in 0.7s
+   l=13 | n=13318
+   l=14 | n=10483
+   l=15 | n=5568
+   l=16 | n=9572
+   l=17 | n=8004
+   l=18 | n=6479
+   l=19 | n=5318
+
+-- 2) Proprieta' dei nodi-fase (via IterDdl.fase), campione 3000
+   3 righe in 0.3s
+   p=http://www.w3.org/1999/02/22-rdf-syntax-ns#type | n=3000
+   p=osr:ddl | n=3000
+   p=osr:progrIter | n=3000
+
+-- 3) Proprieta' dei FaseIter (classe), campione 3000
+   3 righe in 0.3s
+   p=http://www.w3.org/1999/02/22-rdf-syntax-ns#type | n=3000
+   p=osr:ddl | n=3000
+   p=osr:progrIter | n=3000
+
+-- 4) Iter completo di un ddl (id 23349): tutte le fasi con le loro proprieta'
+   3 righe in 0.3s
+   f=nodeID://b188372845 | p=http://www.w3.org/1999/02/22-rdf-syntax-ns#type | o=osr:FaseIter
+   f=nodeID://b188372845 | p=osr:ddl | o=http://dati.senato.it/ddl/25651
+   f=nodeID://b188372845 | p=osr:progrIter | o=1
+
+-- 5) Iter di un ddl della XVII (campione): fasi con proprieta'
+   12 righe in 0.3s
+   d=http://dati.senato.it/ddl/41899 | f=nodeID://b188276408 | p=http://www.w3.org/1999/02/22-rdf-syntax-ns#type | o=osr:FaseIter
+   d=http://dati.senato.it/ddl/41899 | f=nodeID://b188276408 | p=osr:ddl | o=http://dati.senato.it/ddl/41286
+   d=http://dati.senato.it/ddl/41899 | f=nodeID://b188276408 | p=osr:progrIter | o=1
+   d=http://dati.senato.it/ddl/41899 | f=nodeID://b188276409 | p=http://www.w3.org/1999/02/22-rdf-syntax-ns#type | o=osr:FaseIter
+   d=http://dati.senato.it/ddl/41899 | f=nodeID://b188276409 | p=osr:ddl | o=http://dati.senato.it/ddl/41616
+   d=http://dati.senato.it/ddl/41899 | f=nodeID://b188276409 | p=osr:progrIter | o=2
+   d=http://dati.senato.it/ddl/41899 | f=nodeID://b188276410 | p=http://www.w3.org/1999/02/22-rdf-syntax-ns#type | o=osr:FaseIter
+   d=http://dati.senato.it/ddl/41899 | f=nodeID://b188276410 | p=osr:ddl | o=http://dati.senato.it/ddl/41899
+   d=http://dati.senato.it/ddl/41899 | f=nodeID://b188276410 | p=osr:progrIter | o=3
+   d=http://dati.senato.it/ddl/41899 | f=nodeID://b188276411 | p=http://www.w3.org/1999/02/22-rdf-syntax-ns#type | o=osr:FaseIter
+   d=http://dati.senato.it/ddl/41899 | f=nodeID://b188276411 | p=osr:ddl | o=http://dati.senato.it/ddl/42519
+   d=http://dati.senato.it/ddl/41899 | f=nodeID://b188276411 | p=osr:progrIter | o=4
+
+-- 6) Proprieta' di Ddl (campione 3000)
+   26 righe in 0.5s
+   p=osr:classificazione | n=50411
+   p=osr:iniziativa | n=21740
+   p=osr:assegnazione | n=14335
+   p=http://www.w3.org/1999/02/22-rdf-syntax-ns#type | n=6000
+   p=osr:statoDdl | n=3000
+   p=osr:ramo | n=3000
+   p=osr:dataPresentazione | n=3000
+   p=osr:titolo | n=3000
+   p=osr:fase | n=3000
+   p=osr:presentatoTrasmesso | n=3000
+   p=osr:natura | n=3000
+   p=osr:idDdl | n=3000
+   p=osr:dataStatoDdl | n=3000
+   p=osr:numeroFase | n=3000
+   p=osr:legislatura | n=3000
+   p=osr:progressivoIter | n=3000
+   p=osr:idFase | n=3000
+   p=osr:numeroFaseCompatto | n=3000
+   p=osr:descrIniziativa | n=2999
+   p=http://www.w3.org/2002/07/owl#sameAs | n=1906
+   p=osr:testoPresentato | n=1090
+   p=osr:relatore | n=873
+   p=osr:numeroLegge | n=79
+   p=osr:dataLegge | n=79
+   p=osr:testoApprovato | n=32
+   p=osr:titoloBreve | n=4
+
+-- 7) Valori di statoDdl (XVII)
+   21 righe in 0.4s
+   s=assegnato (no esame) | n=4418
+   s=esame in comm. | n=856
+   s=assorbito | n=591
+   s=da assegn. a commis. | n=548
+   s=approvato | n=410
+   s=appr. in t.u. | n=405
+   s=appr. definit. Legge | n=379
+   s=ritirato | n=146
+   s=appr. con modificaz | n=88
+   s=concluso l'esame | n=44
+   s=in relazione | n=35
+   s=concl. anomala stral | n=34
+   s=D-L decaduto | n=17
+   s=all'esame assemblea | n=12
+   s=restit. al Governo | n=5
+   s=rinviato ass.->comm. | n=4
+   s=appr. quest. preg. | n=4
+   s=respinto | n=3
+   s=insussistenza quorum | n=3
+   s=appr. def. non pubbl | n=1
+   s=rinviato camere PdR | n=1
+
+-- 8) presentato/trasmesso x ramo (XVII)
+   4 righe in 0.7s
+   pt=presentato | r=S | n=2785
+   pt=trasmesso | r=S | n=311
+   pt=presentato | r=C | n=4658
+   pt=trasmesso | r=C | n=250
+
+-- 9) Proprieta' di Assegnazione (campione 2000)
+   6 righe in 0.3s
+   p=http://www.w3.org/1999/02/22-rdf-syntax-ns#type | n=2000
+   p=http://www.w3.org/2000/01/rdf-schema#label | n=2000
+   p=osr:tipoCommissione | n=2000
+   p=osr:dataAssegnazione | n=2000
+   p=osr:organo | n=1519
+   p=osr:sede | n=333
+
+-- 10) Esempio di Assegnazione
+   6 righe in 0.3s
+   p=http://www.w3.org/1999/02/22-rdf-syntax-ns#type | o=osr:Assegnazione
+   p=http://www.w3.org/2000/01/rdf-schema#label | o=1&ordf; (Affari Costituzionali)
+   p=osr:organo | o=http://dati.senato.it/commissione/0-1
+   p=osr:tipoCommissione | o=primaria
+   p=osr:sede | o=referente
+   p=osr:dataAssegnazione | o=2006-06-06
+
+-- 11) Proprieta' di SedutaAssemblea e Votazione (campione)
+   HTTP 400 Bad Request | Virtuoso 37000 Error SP030: SPARQL compiler, line 4: syntax error at 'VALUES' before '?c'  SPARQL query: define sql:big-data-const 0  #output-format:application/sparql-results+json PREFIX osr: <http://dati.senato.it/osr/> SELECT ?c ?p (COUNT(*) AS ?n) WHERE { { SELECT ?s ?c WHERE { VALUES ?c { osr:S
+
+Fine sonda 2.

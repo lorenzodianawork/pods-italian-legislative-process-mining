@@ -1,0 +1,44 @@
+{
+  "endpoint": "https://dati.senato.it/sparql",
+  "retrieved_at_utc": "2026-11-03T17:53:49Z",
+  "legislatures": [
+    17,
+    18,
+    19
+  ],
+  "counts": {
+    "ddl_leg_17": {
+      "expected": 8004,
+      "rows": 8004,
+      "distinct": 8004
+    },
+    "ddl_leg_18": {
+      "expected": 6479,
+      "rows": 6515,
+      "distinct": 6479
+    },
+    "ddl_leg_19": {
+      "expected": 5318,
+      "rows": 5318,
+      "distinct": 5318
+    },
+    "assegnazioni_leg_17": {
+      "expected_rows": 44819,
+      "raw_rows": 44819,
+      "complete": true
+    },
+    "assegnazioni_leg_18": {
+      "expected_rows": 35171,
+      "raw_rows": 35171,
+      "complete": true
+    },
+    "assegnazioni_leg_19": {
+      "expected_rows": 31123,
+      "raw_rows": 31123,
+      "complete": true
+    },
+    "ddl_total": 19801,
+    "assegnazioni_distinte": 109220,
+    "iter_rows": 20636
+  }
+}

@@ -1,0 +1,130 @@
+=== 1) Pagine web: link di download ===
+
+-- https://dati.senato.it/
+   status 200 -> https://dati.senato.it/sito/home | bytes 16081
+   title: Home - dati.senato.it
+    http://www.w3.org/RDF/
+   ( 31 link totali, 1 rilevanti )
+
+-- http://dati.senato.it/DatiSenato/browse/7?testo_generico=12&legislatura=17
+   status 200 -> https://dati.senato.it/DatiSenato/browse/7?testo_generico=12&legislatura=17 | bytes 20454
+   title: Atti - dati.senato.it
+    http://json.org/json-it.html
+    http://www.w3.org/RDF/
+    http://www.w3.org/TR/rdf-sparql-XMLres/
+   ( 38 link totali, 3 rilevanti )
+
+-- http://dati.senato.it/DatiSenato/browse/6?testo_generico=11&legislatura=13
+   status 200 -> https://dati.senato.it/DatiSenato/browse/6?testo_generico=11&legislatura=13 | bytes 24039
+   title: Composizione - dati.senato.it
+    http://json.org/json-it.html
+    http://www.w3.org/RDF/
+    http://www.w3.org/TR/rdf-sparql-XMLres/
+   ( 39 link totali, 3 rilevanti )
+
+=== 2) SPARQL: classi presenti ===
+endpoint funzionante: https://dati.senato.it/sparql
+   http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat
+   http://www.openlinksw.com/schemas/virtrdf#QuadStorage
+   http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapFormat
+   http://www.openlinksw.com/schemas/virtrdf#QuadMap
+   http://www.openlinksw.com/schemas/virtrdf#QuadMapValue
+   http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapColumn
+   http://www.openlinksw.com/schemas/virtrdf#QuadMapColumn
+   http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapATable
+   http://www.openlinksw.com/schemas/virtrdf#QuadMapATable
+   http://www.openlinksw.com/schemas/virtrdf#QuadMapFText
+   http://www.openlinksw.com/schemas/virtrdf#array-of-string
+   http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMap
+   http://www.w3.org/ns/sparql-service-description#Service
+   http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
+   http://www.w3.org/2002/07/owl#Class
+   http://www.w3.org/2002/07/owl#Ontology
+   http://www.w3.org/2000/01/rdf-schema#Class
+   http://www.w3.org/2002/07/owl#OntologyProperty
+   http://www.w3.org/2002/07/owl#AnnotationProperty
+   http://www.w3.org/2002/07/owl#InverseFunctionalProperty
+   http://purl.org/vocab/bio/0.1/Birth
+   http://dati.senato.it/osr/Citta
+   http://dati.senato.it/osr/Provincia
+   http://dati.senato.it/osr/Nazione
+   http://dati.senato.it/osr/Ddl
+   http://dati.senato.it/osr/Assegnazione
+   http://dati.senato.it/osr/OggettoTrattazione
+   http://xmlns.com/foaf/0.1/Person
+   http://dati.camera.it/ocd/mandatoSenato
+   http://dati.senato.it/osr/Relatore
+   http://dati.camera.it/ocd/adesioneGruppo
+   http://dati.senato.it/osr/Intervento
+   http://dati.senato.it/osr/Afferenza
+   http://dati.senato.it/osr/Senatore
+   http://dati.senato.it/osr/Iniziativa
+   http://dati.senato.it/osr/SedutaCommissione
+   http://dati.senato.it/osr/Votazione
+   http://dati.senato.it/osr/Procedura
+   http://dati.senato.it/osr/SedutaAssemblea
+   http://dati.senato.it/osr/Documento
+   http://dati.senato.it/osr/Atto
+   http://dati.camera.it/ocd/gruppoParlamentare
+   http://dati.senato.it/osr/Commissione
+   http://dati.senato.it/osr/ConsiglioDiPresidenza
+   http://dati.senato.it/osr/Denominazione
+   http://dati.camera.it/ocd/mandatoCamera
+   http://www.w3.org/2002/07/owl#inverseFunctionalProperty
+   http://xmlns.com/foaf/0.1/OnlineAccount
+   http://dati.senato.it/osr/SindacatoIspettivo
+   http://dati.senato.it/osr/IterDdl
+   http://dati.senato.it/osr/FaseIter
+   http://www.w3.org/2004/02/skos/core#Concept
+   http://dati.senato.it/osr/Classificazione
+   http://dati.senato.it/osr/Emendamento
+
+=== 3) Proprieta' di un esempio per le classi rilevanti (ddl / iter / fase) ===
+
+-- classe http://dati.senato.it/osr/Ddl
+   http://www.w3.org/1999/02/22-rdf-syntax-ns#type = http://dati.senato.it/osr/Ddl
+   http://www.w3.org/1999/02/22-rdf-syntax-ns#type = http://dati.senato.it/osr/Atto
+   osr:assegnazione = nodeID://b188344453
+   osr:assegnazione = nodeID://b188344454
+   osr:assegnazione = nodeID://b188344455
+   osr:assegnazione = nodeID://b188344456
+   osr:assegnazione = nodeID://b188344457
+   osr:statoDdl = esame in comm.
+   osr:ramo = S
+   osr:dataPresentazione = 2006-06-09
+   osr:titolo = Norme per la valorizzazione e la salvaguardia dei prodotti agroalimentari " tradizionali " ai sensi dell' arti
+   osr:fase = S.601
+   osr:descrIniziativa = Sen.  DIVINA SERGIO
+   osr:relatore = nodeID://b188344480
+   osr:iniziativa = http://dati.senato.it/iniziativa/INIZ-DDL-23295-22735
+   osr:iniziativa = http://dati.senato.it/iniziativa/INIZ-DDL-23295-17632
+   osr:iniziativa = http://dati.senato.it/iniziativa/INIZ-DDL-23295-4519
+   osr:presentatoTrasmesso = presentato
+   osr:natura = ordinaria
+   osr:idDdl = 23295
+   osr:dataStatoDdl = 2007-04-11
+   osr:numeroFase = 601
+   osr:legislatura = 15
+   osr:progressivoIter = 1
+   osr:idFase = 25597
+   osr:testoPresentato = urn:nir:senato.repubblica:disegno.legge:15.legislatura;601
+   osr:numeroFaseCompatto = 006010000100
+   osr:classificazione = http://dati.senato.it/classificazione/25597-GEN-1
+   osr:classificazione = http://dati.senato.it/classificazione/25597-GEN-2
+   osr:classificazione = http://dati.senato.it/classificazione/25597-ART-2
+   osr:classificazione = http://dati.senato.it/classificazione/25597-ART-3
+   osr:classificazione = http://dati.senato.it/classificazione/25597-ART-4
+   osr:classificazione = http://dati.senato.it/classificazione/25597-ART-5
+   osr:classificazione = http://dati.senato.it/classificazione/25597-ART-6
+
+-- classe http://dati.senato.it/osr/IterDdl
+   http://www.w3.org/1999/02/22-rdf-syntax-ns#type = http://dati.senato.it/osr/IterDdl
+   osr:fase = nodeID://b188372845
+   osr:idDdl = 23349
+
+-- classe http://dati.senato.it/osr/FaseIter
+   http://www.w3.org/1999/02/22-rdf-syntax-ns#type = http://dati.senato.it/osr/FaseIter
+   osr:ddl = http://dati.senato.it/ddl/24012
+   osr:progrIter = 1
+
+Fine sonda.

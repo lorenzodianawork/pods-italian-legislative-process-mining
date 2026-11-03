@@ -1,0 +1,5 @@
+PREFIX osr: <http://dati.senato.it/osr/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?idDdl ?prog ?d WHERE {
+  ?it a osr:IterDdl ; osr:idDdl ?idDdl ; osr:fase ?f . ?f osr:ddl ?d ; osr:progrIter ?prog . ?d osr:legislatura @LEG@
+}

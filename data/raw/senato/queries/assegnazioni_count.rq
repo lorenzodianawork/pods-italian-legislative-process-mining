@@ -1,0 +1,7 @@
+PREFIX osr: <http://dati.senato.it/osr/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT (COUNT(*) AS ?n) WHERE {
+  ?d a osr:Ddl ; osr:legislatura @LEG@ ; osr:assegnazione ?a . ?a osr:dataAssegnazione ?da .
+  OPTIONAL { ?a osr:organo ?organo } OPTIONAL { ?a rdfs:label ?label }
+  OPTIONAL { ?a osr:sede ?sede }     OPTIONAL { ?a osr:tipoCommissione ?tipo }
+}

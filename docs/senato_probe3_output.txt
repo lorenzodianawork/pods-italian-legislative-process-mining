@@ -1,0 +1,73 @@
+
+-- A) Membri dell'iter ancorato al ddl 41899 (XVII)
+   1 righe in 0.8s
+   prog=1 | m=ddl/45397 | ramo=S | pt=presentato | dp=2015-03-18 | st=assegnato (no esame) | dst=2015-04-22 | fase=S.1821
+
+-- B) Leggi approvate XVII (campione) con numero e data legge
+   6 righe in 0.6s
+   d=ddl/39584 | id=36508 | num=1 | dl=2017-12-04 | fase=C.56
+   d=ddl/47451 | id=43595 | num=1 | dl=2017-01-05 | fase=C.4151
+   d=ddl/41607 | id=36519 | num=1 | dl=2014-01-07 | fase=S.942
+   d=ddl/39595 | id=36519 | num=1 | dl=2014-01-07 | fase=C.67
+   d=ddl/43898 | id=40545 | num=1 | dl=2016-07-28 | fase=S.1289
+   d=ddl/46455 | id=40545 | num=1 | dl=2016-07-28 | fase=S.1289-B
+
+-- C) Distribuzione: numero di letture (FaseIter) per iter
+   HTTP 400 Bad Request | Virtuoso 37000 Error SP030: SPARQL compiler, line 4: syntax error at 'SELECT' before '?it'  SPARQL query: define sql:big-data-const 0  #output-format:application/sparql-results+json PREFIX osr: <http://dati.senato.it/osr/> SELECT ?n (COUNT(*) AS ?iter) WHERE { SELECT ?it (COUNT(?f) AS ?n) WHERE { ?i
+
+-- D) Totale IterDdl
+   1 righe in 0.2s
+   n=54089
+
+-- E) Proprieta' SedutaAssemblea (campione)
+   5 righe in 0.6s
+   p=http://www.w3.org/1999/02/22-rdf-syntax-ns#type | n=1500
+   p=osr:dataSeduta | n=1500
+   p=osr:tipoSeduta | n=1500
+   p=osr:legislatura | n=1500
+   p=osr:numeroSeduta | n=1500
+
+-- F) Proprieta' Votazione (campione)
+   23 righe in 0.9s
+   p=osr:presente | n=223584
+   p=osr:votante | n=217563
+   p=osr:inCongedoMissione | n=55875
+   p=osr:contrario | n=7173
+   p=osr:favorevole | n=6208
+   p=osr:richiedenteNonVotante | n=4527
+   p=http://www.w3.org/1999/02/22-rdf-syntax-ns#type | n=1500
+   p=http://www.w3.org/2000/01/rdf-schema#label | n=1500
+   p=osr:congedoMissione | n=1500
+   p=osr:seduta | n=1500
+   p=osr:presenti | n=1500
+   p=osr:tipoVotazione | n=1500
+   p=osr:favorevoli | n=1500
+   p=osr:maggioranza | n=1500
+   p=osr:votanti | n=1500
+   p=osr:contrari | n=1500
+   p=osr:esito | n=1500
+   p=osr:legislatura | n=1500
+   p=osr:astenuti | n=1500
+   p=osr:presidente | n=1500
+   p=osr:numeroLegale | n=1500
+   p=osr:numero | n=1500
+   p=osr:astenuto | n=526
+
+-- G) Proprieta' SedutaCommissione (campione)
+   5 righe in 0.3s
+   p=osr:commissione | n=1634
+   p=http://www.w3.org/1999/02/22-rdf-syntax-ns#type | n=1500
+   p=osr:dataSeduta | n=1500
+   p=osr:tipoSeduta | n=1500
+   p=osr:legislatura | n=1500
+
+-- H) Ddl XVII con ramo=C: sono gli stessi atti della Camera? (campione con sameAs/titolo/fase)
+   0 righe in 0.2s
+
+-- I) Limite righe: quante righe restituisce una query senza LIMIT (ddl XIX)
+   5318 righe in 1.1s
+   d=ddl/60180
+   d=ddl/60177
+   d=ddl/60176
+
+Fine sonda 3.

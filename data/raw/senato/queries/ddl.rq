@@ -1,0 +1,10 @@
+PREFIX osr: <http://dati.senato.it/osr/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?d ?idDdl ?ramo ?pt ?dp ?fase ?nf ?stato ?dstato ?natura ?prog ?titolo ?nleg ?dleg WHERE {
+  ?d a osr:Ddl ; osr:legislatura @LEG@ ; osr:idDdl ?idDdl ; osr:ramo ?ramo ;
+     osr:presentatoTrasmesso ?pt ; osr:dataPresentazione ?dp ; osr:fase ?fase .
+  OPTIONAL { ?d osr:numeroFase ?nf }    OPTIONAL { ?d osr:statoDdl ?stato }
+  OPTIONAL { ?d osr:dataStatoDdl ?dstato } OPTIONAL { ?d osr:natura ?natura }
+  OPTIONAL { ?d osr:progressivoIter ?prog } OPTIONAL { ?d osr:titolo ?titolo }
+  OPTIONAL { ?d osr:numeroLegge ?nleg }  OPTIONAL { ?d osr:dataLegge ?dleg }
+}

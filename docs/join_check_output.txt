@@ -1,0 +1,31 @@
+ddl: 19801 | iter.csv: 20636
+
+== 1) Senato: ramo x presentato/trasmesso per legislatura ==
+  leg 17 {('C', 'presentato'): 4658, ('S', 'presentato'): 2785, ('S', 'trasmesso'): 311, ('C', 'trasmesso'): 250}
+  leg 18 {('C', 'presentato'): 3561, ('S', 'trasmesso'): 221, ('C', 'trasmesso'): 199, ('S', 'presentato'): 2498}
+  leg 19 {('S', 'presentato'): 1880, ('C', 'presentato'): 2955, ('S', 'trasmesso'): 237, ('C', 'trasmesso'): 246}
+  'fase' non conformi a C.n / S.n[-X]: 53 ['C.3-35-182-358-551-632-718-746-747-749-876-894-932-998-1025-1026-1116-1143-1401-1452-1453-1511-1514-1657-1704-1794-1914-1946-1947-1977-2038-BIS-B', 'S.859-1357-1378-1484-1553-B', 'S.10-362-388-395-849-874-B', 'C.831-892-1053-1288-1938-2200-B', 'C.2679-BIS-B']
+  ramo coerente col prefisso di fase: 19748 / 19801
+  fase con suffisso (-B, -C...) = riletture: 257 | per presentatoTrasmesso: {'trasmesso': 145, 'presentato': 112}
+
+== 2) Iter = gruppi per idDdl ==
+  gruppi idDdl: 18337 | dimensione (n letture: n gruppi): {1: 17057, 2: 1127, 3: 126, 4: 24, 5: 2, 6: 1}
+  iter con >=2 letture: 1280
+   - progressivoIter univoco nel gruppo: 1062 | date crescenti con progressivo: 1248 | prima lettura 'presentato': 1251
+   - coinvolgono entrambe le Camere: 1280 | rami alternati C/S a ogni lettura: 1263
+  iter.csv vs ddl.csv (idDdl e progressivo coincidono): 19564 | discordanti: 1072 | ddl non in ddl.csv: 0
+  esempi di iter lungo (>=4 letture):
+   idDdl 38210 -> S.813(pres,2013-06-10) > C.1359(tras,2013-07-12) > S.813-B(tras,2013-09-10) > C.1359-B(tras,2013-10-23)
+   idDdl 37812 -> C.925(pres,2013-05-13) > S.1119(tras,2013-10-18) > C.925-B(tras,2014-10-30) > S.1119-B(tras,2015-06-25)
+   idDdl 36497 -> C.45(pres,2013-03-15) > C.45-933-952-1959-B(tras,2016-03-10) > S.1917(tras,2015-05-18) > S.1917-B(tras,2016-07-08)
+
+== 3) Aggancio Camera <-> Senato (chiave: legislatura + numero) ==
+  leg 17: atti Camera 4822 | ddl Senato con fase C.n (prima lettura) 4822 | in comune 4822 | solo Camera 0 | solo Senato 0
+     incrocio esito (in comune): {('Camera:altro', 'Senato:altro'): 4546, ('Camera:Legge', 'Senato:altro'): 125, ('Camera:Legge', 'Senato:Legge'): 72, ('Camera:altro', 'Senato:Legge'): 79}
+     atti Camera il cui ultimo stato cita Senato/navetta: 551
+  leg 18: atti Camera 3705 | ddl Senato con fase C.n (prima lettura) 3706 | in comune 3705 | solo Camera 0 | solo Senato 1
+     incrocio esito (in comune): {('Camera:altro', 'Senato:altro'): 3363, ('Camera:Legge', 'Senato:altro'): 212, ('Camera:Legge', 'Senato:Legge'): 124, ('Camera:altro', 'Senato:Legge'): 6}
+     atti Camera il cui ultimo stato cita Senato/navetta: 320
+  leg 19: atti Camera 3172 | ddl Senato con fase C.n (prima lettura) 3172 | in comune 3172 | solo Camera 0 | solo Senato 0
+     incrocio esito (in comune): {('Camera:Legge', 'Senato:Legge'): 160, ('Camera:altro', 'Senato:altro'): 2793, ('Camera:Legge', 'Senato:altro'): 212, ('Camera:altro', 'Senato:Legge'): 7}
+     atti Camera il cui ultimo stato cita Senato/navetta: 288

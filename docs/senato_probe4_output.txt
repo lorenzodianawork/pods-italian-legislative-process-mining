@@ -1,0 +1,25 @@
+OK   A base (3 var), LIMIT 5                             5 righe   0.5s  url=428
+        {'d': 'http://dati.senato.it/ddl/41894', 'da': '2014-01-08'}
+        {'d': 'http://dati.senato.it/ddl/41894', 'da': '2014-01-08'}
+OK   B base + 4 OPTIONAL, LIMIT 5                        5 righe   1.6s  url=646
+        {'d': 'http://dati.senato.it/ddl/39979', 'da': '2013-03-27', 'organo': 'http://dati.senato.it/commissione/0-74', 'label': 'one speciale su atti urgenti del Governo', 'sede': 'referente', 'tipo': 'primaria'}
+        {'d': 'http://dati.senato.it/ddl/40327', 'da': '2013-04-09', 'label': 'mmissione speciale esame atti di Governo', 'sede': 'referente', 'tipo': 'primaria'}
+HTTP 403 C FILTER semplice STRAFTER >= (no &&)      url=519
+HTTP 403 D due FILTER separati (>= e <=)            url=610
+HTTP 403 E un FILTER con &&                         url=605
+OK   F FILTER su data assegnazione (stringa)             5 righe   0.8s  url=527
+        {'d': 'http://dati.senato.it/ddl/43691', 'da': '2014-01-03'}
+        {'d': 'http://dati.senato.it/ddl/43691', 'da': '2014-01-03'}
+OK   G FILTER ?d = <IRI>                                 4 righe   0.3s  url=497
+        {'d': 'http://dati.senato.it/ddl/45397', 'da': '2015-04-22'}
+        {'d': 'http://dati.senato.it/ddl/45397', 'da': '2015-04-22'}
+OK   H FILTER ?d IN (<IRI>,<IRI>)                        5 righe   0.3s  url=553
+        {'d': 'http://dati.senato.it/ddl/45398', 'da': '2015-04-22'}
+        {'d': 'http://dati.senato.it/ddl/45398', 'da': '2015-04-22'}
+OK   I COUNT assegnazioni leg 17                         1 righe   0.6s  url=400
+        {'n': '44489'}
+OK   J leg 17 intera, LIMIT 100000 (cap righe?)      10000 righe   1.6s  url=537
+OK   K iter leg 17 intera, LIMIT 100000               8502 righe   1.9s  url=481
+HTTP 403 L iter con FILTER STRAFTER (due filter)    url=659
+
+Fine sonda 4.
